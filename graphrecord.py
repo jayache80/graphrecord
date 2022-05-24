@@ -19,7 +19,7 @@ def write():
             writer.writerow([src, dst, strength])
 
 def should_quit(s):
-    return s == "quit" or s == "q"
+    return not s or s == "quit" or s == "q"
 
 def main():
     global graph
